@@ -14,4 +14,4 @@
 
 ## Live Demo
 
-### https://mattheweq.github.io/ui-card-element
+### https://mattheweq.github.io/ui-card-elements
