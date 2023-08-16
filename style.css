@@ -1,0 +1,288 @@
+html {
+  font-size: 16px;
+}
+@media screen and (max-width: 376px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 220px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* ================================== */
+
+body {
+  background: #f7f7f7;
+  font-family: sans-serif;
+}
+
+/* ================================== */
+
+.center {
+  text-align: center;
+}
+
+/* Card Group */
+
+ul.card-group {
+  list-style: none;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+  padding: 0;
+}
+
+/* Card */
+
+ul.card-group li {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 20px;
+  max-width: 315px;
+  width: 90%;
+
+  border-radius: 3px;
+  box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.02);
+  border: 1px solid #e9e9e9;
+  background-color: #f9f9f9;
+
+  font-size: 0.8125rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 220px) {
+  ul.card-group li {
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 220px) {
+  .tiny {
+    display: none;
+    font-size: 1rem;
+  }
+}
+
+/* Card Image Link */
+
+ul.card-group li > a {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Card Image */
+
+ul.card-group li > a img {
+  width: 100%;
+}
+@media screen and (max-width: 292px) {
+  ul.card-group li > a {
+    height: 0;
+  }
+  ul.card-group li > a img {
+    visibility: hidden;
+    height: 155px;
+  }
+}
+
+/* Card Interior Spacing */
+
+ul.card-group li div {
+  padding: 20px 20px;
+}
+
+/* Article Title */
+
+ul.card-group li h2 {
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 2px 0;
+}
+
+/* Card Title Link */
+
+ul.card-group li h2 a {
+  color: #2b2b2b;
+  text-decoration: none;
+}
+
+/* Card Text */
+
+ul.card-group li div p {
+  line-height: 21px;
+  color: #5d5d5d;
+  margin: 17px 0 15px;
+}
+@media screen and (max-width: 292px) {
+  ul.card-group li div p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+/* CTA Buttons Group/Justifications */
+div.cta {
+  margin: -10px -20px -20px;
+}
+
+.cta-center {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-spread {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* CTA Buttons Link*/
+
+ul li div.cta a {
+  display: inline-block;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 2px;
+  background-color: #f2f2f2;
+  font-size: 0.75rem;
+  color: #1a2513;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 10px 3px 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+
+
+/* CARD DESIGN 2 */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,900");
+
+.card2-container {
+  font-family: "Lato", sans-serif;
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  /* height: 100vh; */
+  line-height: 1.6;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.center {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-weight: 900;
+}
+
+.card2 {
+  position: relative;
+  width: 310px;
+  box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card2::before,
+.card2::after {
+  content: "";
+  position: absolute;
+  border: 1px solid white;
+}
+
+.card2::before {
+  top: 12rem;
+  bottom: 0.8rem;
+  right: 0.8rem;
+}
+
+.card2::after {
+  bottom: 0.8rem;
+  left: 10rem;
+  right: 0.8rem;
+}
+.card2 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: saturate(5);
+}
+
+.card2__body {
+  background: rgba(255, 0, 0, 0.5);
+  color: white;
+  padding: 2.3rem 3rem;
+}
+.card2__body::before {
+  content: ">> Scenes from an epic drive";
+  position: absolute;
+  right: 0em;
+  top: -1.85em;
+  color: #222;
+  background: rgba(124, 147, 182, 0.01);
+  border-bottom: 0px;
+  padding: 2px 5px;
+  font-size: 0.85rem;
+}
+
+.card2__body::after {
+  content: "";
+  position: absolute;
+  left: 0em;
+  bottom: 0rem;
+  height: 12%;
+  width: 15px;
+  background: rgba(0, 255, 0, 0.8);
+}
+
+.card2__title,
+.card2__text {
+  margin: 0;
+}
+
+.card2__title {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 0.5em;
+  position: relative;
+  z-index: 1;
+}
+
+.card2__title {
+  color: rgba(255, 255, 0, 0);
+}
+.card2__title::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 0, 0.9);
+  height: 100%;
+  width: calc(100% + 0rem);
+  top: 0;
+  left: 0;
+}
+
+.card2__text {
+  margin-top: -0.1rem;
+  margin-left: 0.6rem;
+}
+
+
+@media (min-width: 768px) {
+  .card2-container{
+    flex-direction: row;
+  }
+}
