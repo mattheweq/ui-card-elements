@@ -12,6 +12,5 @@
 
 #### New palette generation is recommended when changing the card image.
 
-## Live Demo
+[LIVE SITE](https://mattheweq.com/ui-card-elements/)
 
-### https://mattheweq.github.io/ui-card-elements
